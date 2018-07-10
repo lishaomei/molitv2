@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.Leanback" />
+
+    <style name="MoliActionBarStyle" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">@color/color_black</item>
+    </style>
+
+    <style name="TopStatusTimeStyle">
+        <item name="android:textSize">@dimen/sp_26</item>
+        <item name="android:textColor">@color/color_white_alpha_half</item>
+    </style>
+
+    <style name="Theme.MoliSmartBar" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowTitleSize">0.0dip</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:actionBarStyle">@style/MoliActionBarStyle</item>
+    </style>
+
+
+    <style name="TopLoadingTitleStyle">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="TopLoadingSubTitleStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="PlayInfoShadowStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@null</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="PlayerCenterTextStyle">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="PlayerCenterBufferTextStyle">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="PlayerReadytoPlayTextStyle">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">#80ffffff</item>
+    </style>
+
+    <style name="PlayerVolumeViewStyle">
+        <item name="android:background">@drawable/bg_volume</item>
+        <item name="android:paddingLeft">@dimen/dp_15</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingRight">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <style name="TopStatusViewPlayerStyle">
+        <item name="android:paddingTop">@dimen/dp_20</item>
+        <item name="android:paddingRight">@dimen/dp_52</item>
+    </style>
+
+    <style name="PlayerTopDescStyle">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/color_white_alpha_half</item>
+        <item name="android:paddingLeft">@dimen/dp_52</item>
+        <item name="android:paddingTop">@dimen/dp_2</item>
+        <item name="android:paddingRight">@dimen/dp_52</item>
+    </style>
+
+    <style name="VersionTextStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/color_white_alpha_half</item>
+        <item name="android:paddingRight">@dimen/dp_40</item>
+        <item name="android:paddingBottom">@dimen/dp_20</item>
+    </style>
+    <style name="PlayerTopTitleStyle">
+        <item name="android:textSize">@dimen/sp_26</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:paddingLeft">@dimen/dp_52</item>
+        <item name="android:paddingTop">@dimen/dp_20</item>
+    </style>
+
+    <style name="PlayerTopViewStyle">
+        <item name="android:background">@drawable/bg_timeshadow</item>
+    </style>
+
+    <style name="SubTitleTextStyle">
+        <item name="android:textSize">@dimen/dp_24</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="TopLoadingTitleSmallStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="TopLoadingSubTitleSmallStyle">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="PlayerReadytoPlayTextSmallStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">#ccffffff</item>
+    </style>
+</resources>

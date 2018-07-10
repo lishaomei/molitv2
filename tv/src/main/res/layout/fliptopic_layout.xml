@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+
+    <include
+        android:id="@+id/fliptopic_tag_tabview"
+        layout="@layout/fliptopic_tag_tabview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_128"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_toRightOf="@id/left_rect"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/fliplistview_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fliptopic_tag_tabview"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_toRightOf="@id/left_rect">
+
+        <include
+            android:id="@+id/fliptopicListView"
+            layout="@layout/fliptopiclist_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_132"
+            android:layout_marginRight="@dimen/dp_132"
+            android:layout_marginTop="@dimen/dp_10"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/fliptopicEpisodeListView"
+            layout="@layout/fliptopic_episode_list_layout"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_44"
+            android:alpha="0.0"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_rect"
+        android:layout_width="@dimen/dp_488"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fliptopic_left_bg"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/fliptopic_thumbnail"
+            android:layout_width="@dimen/dp_488"
+            android:layout_height="@dimen/dp_275"
+            android:layout_marginTop="@dimen/dp_104"
+            android:scaleType="centerCrop"
+            android:src="@drawable/webvideoitem_bg" />
+
+        <TextView
+            android:id="@+id/fliptopic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_30"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_34" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fliptopic_thumbnail"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_32"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/fliptopic_author_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fliptopic_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/fliptopic_author"
+                    android:textColor="@color/color_white_alpha_alpha30"
+                    android:textSize="@dimen/sp_20" />
+
+                <include
+                    android:id="@+id/fliptopic_authorView"
+                    layout="@layout/topic_tag_tabview_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/fliptopic_author"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fliptopic_tags_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/fliptopic_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/fliptopic_tags"
+                    android:textColor="@color/color_white_alpha_alpha30"
+                    android:textSize="@dimen/sp_20" />
+
+                <include
+                    android:id="@+id/fliptopic_tagsView"
+                    layout="@layout/topic_tag_tabview_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/fliptopic_tags"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fliptopic_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/dp_8"
+                android:maxLines="3"
+                android:textColor="@color/color_white_alpha_alpha30"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fliptopic_btn_shadow"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="@dimen/dp_168"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/fliptopic_btn_shadow" />
+
+        <include
+            android:id="@+id/btn_favorite"
+            layout="@layout/webvideoinfo_btn_layout"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_64"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_28" />
+
+        <include
+            android:id="@+id/btn_play_now"
+            layout="@layout/webvideoinfo_btn_layout"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_64"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_toRightOf="@id/btn_favorite" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/PlayerLayout"
+        layout="@layout/playerview_overlay_layout"
+        android:layout_width="@dimen/dp_488"
+        android:layout_height="@dimen/dp_275"
+        android:layout_marginTop="@dimen/dp_104"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <com.molitv.android.view.FlipTopicOverlayView
+        android:id="@+id/OverlayContainer"
+        android:layout_width="@dimen/dp_488"
+        android:layout_height="@dimen/dp_275"
+        android:layout_marginTop="@dimen/dp_104"
+        android:background="@drawable/bg_fliptopicoverlay">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_22"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/fliptopic_overlay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/fliptopic_goto_fullscreen"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.molitv.android.view.FlipTopicOverlayView>
+
+    <RelativeLayout
+        android:id="@+id/TagSerachLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_black_80"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_916"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg">
+
+            <RelativeLayout
+                android:id="@+id/TagListLayout"
+                android:layout_width="@dimen/dp_706"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true">
+
+                <include
+                    android:id="@+id/FliptopicTagDetailListView"
+                    layout="@layout/fliptopic_tag_result_listview_layout"
+                    android:layout_width="@dimen/dp_624"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_96" />
+
+                <TextView
+                    android:id="@+id/FliptopicTagDetaiTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/FliptopicTagDetailListView"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:text=""
+                    android:textColor="@color/color_white_alpha_alpha30"
+                    android:textSize="@dimen/sp_26" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/TagCategoryLayout"
+                android:layout_width="@dimen/dp_210"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/TagListLayout"
+                android:background="@color/color_black_50">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:text="@string/fliptopic_tags_relation"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/sp_32" />
+
+                <ImageView
+                    android:id="@+id/UpArrow"
+                    android:layout_width="@dimen/dp_156"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_64"
+                    android:src="@drawable/lite_nav_arrow_up" />
+
+                <ImageView
+                    android:id="@+id/DownArrow"
+                    android:layout_width="@dimen/dp_156"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/lite_nav_arrow_down" />
+
+                <com.molitv.android.view.widget.TabListView
+                    android:id="@+id/FlipTopicTagCategoryListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@id/DownArrow"
+                    android:layout_below="@id/UpArrow">
+
+                    <LinearLayout
+                        android:id="@id/ListViewSelector"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_64"
+                        android:background="@drawable/fliptipic_tag_category_hl"
+                        android:orientation="vertical"
+                        android:visibility="gone" />
+
+                    <ListView
+                        android:id="@id/ListView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/color_transparent"
+                        android:cacheColorHint="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0.0dip"
+                        android:fadingEdgeLength="@dimen/dp_80"
+                        android:listSelector="@color/color_transparent"
+                        android:requiresFadingEdge="vertical"
+                        android:scrollbars="none" />
+                </com.molitv.android.view.widget.TabListView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

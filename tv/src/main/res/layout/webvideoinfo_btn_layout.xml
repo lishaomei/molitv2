@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.molitv.android.view.WebVideoInfoButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_fliptopic_playbtn"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/IconImageView"
+        android:layout_width="@dimen/dp_34"
+        android:layout_height="@dimen/dp_34"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:src="@drawable/videoinfo_playbtn" />
+
+    <ImageView
+        android:id="@+id/LineImageView"
+        android:layout_width="@dimen/dp_3"
+        android:layout_height="@dimen/dp_48"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/IconImageView"
+        android:scaleType="fitXY"
+        android:src="@drawable/videoinfo_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@id/LineImageView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/TitleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_white_real"
+            android:textSize="@dimen/sp_24" />
+
+        <TextView
+            android:id="@id/DescTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/textcolor_videoinfobtn_desc"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+</com.molitv.android.view.WebVideoInfoButton>

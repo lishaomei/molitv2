@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:arc="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/ad_rl_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@+id/ad_iv_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_tips"
+        android:background="@drawable/ic_tv_play" android:visibility="invisible"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" layout="@layout/loading_progressbar" />
+    <com.cloudmedia.tv.widget.ArcProgress android:layout_gravity="bottom|center|right" android:id="@+id/arc_progress" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginRight="70.0dip" android:layout_marginBottom="40.0dip" arc:arc_progress="0" arc:arc_max="100" arc:arc_bottom_text="正在下载" arc:arc_bottom_text_size="13.0sp" />
+</FrameLayout>

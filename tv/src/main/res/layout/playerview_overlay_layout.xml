@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_black">
+
+    <include
+        android:id="@id/PlayerView"
+        layout="@layout/playerview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.molitv.android.view.player.OverlayPlayerController
+        android:id="@id/PlayerController"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include
+            android:id="@id/PlayerInfoView"
+            layout="@layout/playerinfoview_small_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false"
+            android:orientation="vertical">
+
+            <include
+                android:id="@id/TopLoadingView"
+                layout="@layout/centerinfoviewtop_small_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dp_36"
+                android:layout_marginTop="@dimen/dp_12"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.molitv.android.view.player.OverlayPlayerController>
+</FrameLayout>

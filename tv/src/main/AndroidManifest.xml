@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cloudmedia.videoplayer">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.cloudmedia.tv.WelcomeActivity"
+            android:banner="@drawable/app_icon_your_company"
+            android:icon="@drawable/app_logo"
+            android:label="@string/app_name"
+            android:logo="@drawable/app_logo"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".PlaybackActivity" />
+        <activity android:name="com.cloudmedia.tv.MainActivity" android:screenOrientation="landscape"></activity>
+        <activity android:name="com.molitv.android.activity.LauncherActivity"
+            android:icon="@drawable/app_logo"
+            android:label="@string/app_name"
+            android:logo="@drawable/app_logo"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name="com.molitv.android.activity.MRBaseActivity"></activity>
+        <activity android:name="com.molitv.android.activity.FlipTopicActivity"></activity>
+    </application>
+
+</manifest>

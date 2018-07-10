@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.molitv.android.view.player.PlayerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/VideoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <include
+        android:id="@+id/SubTitleView"
+        layout="@layout/subtitleview_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_40" />
+</com.molitv.android.view.player.PlayerView>

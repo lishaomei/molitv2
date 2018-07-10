@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/timeshift_frame" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/timeshift_center" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/timeshift_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="26.0sp" android:textColor="@color/white_color" android:layout_gravity="center_horizontal" android:id="@+id/timeshift_stoptime" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/seekbar_linear" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/time_linear" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="22.0sp" android:textColor="@color/white_color" android:gravity="center" android:id="@+id/timeshift_timetext" android:background="@drawable/timeshift_timebg" android:layout_width="94.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeshift_image" />
+            </LinearLayout>
+            <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/seekbar" android:background="@drawable/timeshift_seekbar_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1186.0dip" android:layout_height="5.0dip" android:progressDrawable="@drawable/seekbar_img" android:thumb="@null" style="?android:attr/progressBarStyleHorizontal" />
+        </LinearLayout>
+        <FrameLayout android:id="@+id/timeshift_bottom_linear" android:background="@drawable/timeshift_bg" android:layout_width="fill_parent" android:layout_height="124.0dip">
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/no_timeshift" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="38.0sp" android:textStyle="bold" android:textColor="#ff9f9fa0" android:gravity="bottom" android:id="@+id/no_timeshift_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="27.0dip" android:layout_marginBottom="27.0dip" android:text="@string/no_timeshift" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/has_timeshift" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="30.0sp" android:textColor="@color/white_color" android:id="@+id/timeshift_epg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="85.0dip" android:layout_marginTop="29.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:id="@+id/timeshift_bottom_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="22.0sp" android:textColor="@color/white_color" android:id="@+id/timeshift_loading" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="430.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="bottom|center|right" android:orientation="horizontal" android:id="@+id/timeshift_bottom_right1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="145.0dip" android:layout_marginBottom="29.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="24.0sp" android:textColor="#ff959495" android:id="@+id/timeshift_ok_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeshift_ok_tip" />
+                        <TextView android:textSize="24.0sp" android:textColor="#ff959495" android:id="@+id/timeshift_menu_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:text="@string/timeshift_menu_tip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.molitv.android.view.player.PlayerVolumeView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PlayerVolumeViewStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/player_volumebar_height">
+
+        <LinearLayout
+            android:id="@+id/VolumeBarBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_volumebar_default"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/VolumeBarProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_volumebar_hl"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/VolumeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/player_volumeimage_margintop"
+        android:src="@drawable/icon_volume" />
+</com.molitv.android.view.player.PlayerVolumeView>

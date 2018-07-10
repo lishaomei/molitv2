@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.cloudmedia.videoplayer">
+    <item android:color="@color/color_white_real" app:state_highlight="true" />
+    <item android:state_pressed="true" android:color="#ff488dff" />
+    <item android:color="#ff488dff" app:state_highlight="false" app:state_currentselected="true" />
+    <item android:color="@color/color_white_alpha_alpha60" />
+</selector>

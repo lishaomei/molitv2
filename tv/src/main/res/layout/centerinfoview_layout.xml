@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.molitv.android.view.player.CenterInfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_244">
+
+        <ImageView
+            android:id="@+id/CenterInfoImgBg"
+            android:layout_width="@dimen/dp_224"
+            android:layout_height="@dimen/dp_244"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/playeloading_big_shadow" />
+
+        <ImageView
+            android:id="@id/CenterInfoImg"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/playerloading_big" />
+
+        <TextView
+            android:id="@id/CenterInfoBufferTextView"
+            style="@style/PlayerCenterBufferTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@id/CenterInfoTitle"
+            style="@style/PlayerCenterTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true" />
+    </RelativeLayout>
+</com.molitv.android.view.player.CenterInfoView>

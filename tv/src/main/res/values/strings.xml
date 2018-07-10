@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">取消</string>
+    <string name="strNetworkTipsConfirmBtn">继续下载</string>
+    <string name="strNetworkTipsMessage">你已切换到移动网络，是否继续当前下载？</string>
+    <string name="strNetworkTipsTitle">网络提示</string>
+    <string name="strNotificationClickToContinue">继续下载</string>
+    <string name="strNotificationClickToInstall">点击安装</string>
+    <string name="strNotificationClickToRetry">点击重试</string>
+    <string name="strNotificationClickToView">点击查看</string>
+    <string name="strNotificationDownloadError">下载失败</string>
+    <string name="strNotificationDownloadSucc">下载完成</string>
+    <string name="strNotificationDownloading">正在下载</string>
+    <string name="strNotificationHaveNewVersion">有新版本</string>
+    <string name="strToastCheckUpgradeError">检查新版本失败，请稍后重试</string>
+    <string name="strToastCheckingUpgrade">正在检查，请稍候...</string>
+    <string name="strToastYourAreTheLatestVersion">你已经是最新版了</string>
+    <string name="strUpgradeDialogCancelBtn">下次再说</string>
+    <string name="strUpgradeDialogContinueBtn">继续</string>
+    <string name="strUpgradeDialogFeatureLabel">更新说明</string>
+    <string name="strUpgradeDialogFileSizeLabel">包大小</string>
+    <string name="strUpgradeDialogInstallBtn">安装</string>
+    <string name="strUpgradeDialogRetryBtn">重试</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">更新时间</string>
+    <string name="strUpgradeDialogUpgradeBtn">立即更新</string>
+    <string name="strUpgradeDialogVersionLabel">版本</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to this device.</string>
+    <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="VideoView_error_title">Cannot play video</string>
+    <string name="action_settings">Settings</string>
+    <string name="ad_skip_tip">>> 按任意键开始观看节目</string>
+    <string name="add_fav_success">添加收藏成功</string>
+    <string name="app_name">电视直播</string>
+    <string name="back">退出</string>
+    <string name="btn_common_setting">通用设置</string>
+    <string name="choose_epg_program">选集播放</string>
+    <string name="clear_data_success">清除缓存成功</string>
+    <string name="close_boot_start_success">关闭开机启动成功</string>
+    <string name="common_type">常看频道</string>
+    <string name="cs_boot_start_setting">开机启动</string>
+    <string name="cs_bs_close">关闭</string>
+    <string name="cs_bs_start">开启</string>
+    <string name="cs_clear_cache_setting">清除缓存</string>
+    <string name="cs_lr_sound">声音</string>
+    <string name="cs_lr_source">换源</string>
+    <string name="cs_lrkey_setting">左右键设置</string>
+    <string name="cs_recovery_setting">恢复默认配置</string>
+    <string name="cs_ud_down">反向换台</string>
+    <string name="cs_ud_up">正向换台</string>
+    <string name="cs_udkey_setting">上下键设置</string>
+    <string name="custom_channel_description">"1、通过论坛、百度等找到喜欢的频道地址。
+
+ 2、在电脑上创建一个名为tv.txt的文件，将直播频道的地址粘贴在文件中。
+
+ 3、调整格式为“频道名称,频道地址1#频道地址2”（逗号和#号为英文状态，一行一个频道）。
+
+ 4、更改编码为UTF-8。(在“另存为”窗口的下方更改)
+
+ 5、U盘添加：将tv.txt复制到U盘根目录下，将U盘插入电视或机顶盒，打开云电视，应用启动时会自动读取U盘的tv.txt文件。如果是应用已经进入播放界面，再插入U盘，这时在播放界面按菜单键，点击“自定义频道”会自动读取U盘的txt.tv文件。
+
+ 6、所有的自定义频道在自定义分类里面展示，自定义分类位于分类列表的最后，不会影响其它分类"</string>
+    <string name="dbup_details">更新内容</string>
+    <string name="dbup_download_err">更新失败，请稍后重试</string>
+    <string name="dbup_download_mk_err">下载失败，请稍后重试</string>
+    <string name="dbup_downloading_mk">正在下载当贝市场</string>
+    <string name="dbup_retry">重试</string>
+    <string name="dbup_right_away">立即更新</string>
+    <string name="dbup_size">大小</string>
+    <string name="dbup_to_market">前往当贝市场更新</string>
+    <string name="dbup_up_to_newest">更新至最新版才能使用</string>
+    <string name="dbup_version">版本</string>
+    <string name="del_fav_success">删除收藏成功</string>
+    <string name="exit_info">您要退出电视直播吗</string>
+    <string name="exit_version">当前版本：%s</string>
+    <string name="file_download_error">文件下载错误</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="install_moretv">请先安装电视家!</string>
+    <string name="linkin_channel" />
+    <string name="live_list">键显示列表</string>
+    <string name="living">直播中</string>
+    <string name="loading_data">正在更新数据...</string>
+    <string name="loading_error">数据加载失败,请重试或退出检查网络</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="menu_add_fav">加入收藏</string>
+    <string name="menu_auto_choose_source">自动选源</string>
+    <string name="menu_bootstart_off">关闭开机启动</string>
+    <string name="menu_bootstart_on">设为开机启动</string>
+    <string name="menu_clean">清除数据</string>
+    <string name="menu_custom_source">自定义频道</string>
+    <string name="menu_del_fav">删除收藏</string>
+    <string name="menu_more_info">查看版本号</string>
+    <string name="menu_scale_fullscreen">全屏</string>
+    <string name="menu_scale_original">原始比例</string>
+    <string name="more_function">换源、更多功能</string>
+    <string name="network_error">网络已经中断,请检查网络</string>
+    <string name="new_version_is_available">发现新版本</string>
+    <string name="no_epg_info">暂无节目信息</string>
+    <string name="no_timeshift">该频道当前无时移源哦!</string>
+    <string name="restore_default_success">还原默认数据成功</string>
+    <string name="retry">重试</string>
+    <string name="set_boot_start_success">设置开机启动成功</string>
+    <string name="show_list">节目清单</string>
+    <string name="stoped">已暂停</string>
+    <string name="switch_hd_source">切换高清源</string>
+    <string name="switch_sd_source">切换标清源</string>
+    <string name="timeshift_loading">正在缓冲</string>
+    <string name="timeshift_menu_tip">按菜单键选源</string>
+    <string name="timeshift_ok_tip">按OK键播放或暂停</string>
+    <string name="timeshift_word">时移</string>
+    <string name="tip_text" />
+    <string name="tv_no_channel">频道不存在</string>
+    <string name="tv_no_source">没有可以播放的源</string>
+    <string name="unavailable_timeshiftresources">时移请求超时，现为您切回直播！</string>
+    <string name="update_data">-- 正在更新频道数据 --</string>
+    <string name="update_dialog_cancle">稍后再说</string>
+    <string name="update_dialog_sure">立即更新</string>
+    <string name="update_info_title">更新内容</string>
+    <string name="warning">警告</string>
+
+    <string name="fliptopic_author">作者 :</string>
+    <string name="fliptopic_tags">标签 :</string>
+    <string name="setting_customupdownbtn_title">定制上下键</string>
+    <string name="fliptopic_tags_relation">相关专辑</string>
+    <string name="videoinfo_detail">节目简介</string>
+    <string name="videoinfo_episode">全部选集</string>
+    <string name="videoinfo_recommend">更多推荐</string>
+    <string name="videoinfo_relatedalbum">相关专辑</string>
+    <string name="videoinfo_searchstar">相关节目</string>
+    <string name="videoinfo_searchstar_person">相关人物</string>
+    <string name="fliptopic_goto_fullscreen">按OK键切换全屏</string>
+    <string name="webvideoinfo_option_toplay">马上播放</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.molitv.android.view.TopStatusView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="@dimen/dp_40"
+        android:paddingTop="@dimen/dp_80">
+
+        <TextView
+            android:id="@+id/TimeTextView"
+            style="@style/TopStatusTimeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_white_alpha_half"
+            android:textSize="@dimen/sp_24" />
+    </com.molitv.android.view.TopStatusView>
+
+    <RelativeLayout
+        android:id="@+id/StarterLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/StarterLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loading" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/VersionTextView"
+        style="@style/VersionTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="" />
+</RelativeLayout>

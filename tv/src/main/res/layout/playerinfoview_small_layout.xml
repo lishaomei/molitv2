@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.molitv.android.view.player.PlayerInfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@id/AngleInfoView"
+        layout="@layout/angleinfoview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/player_angleinfoview_marginbottom"
+        android:layout_marginLeft="@dimen/player_angleinfoview_marginleft"
+        android:layout_marginTop="@dimen/player_angleinfoview_margintop"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/CenterInfoView"
+        layout="@layout/centerinfoview_small_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_80"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/ReadPlayTips"
+        style="@style/PlayerReadytoPlayTextSmallStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:gravity="center"
+        android:singleLine="true" />
+</com.molitv.android.view.player.PlayerInfoView>

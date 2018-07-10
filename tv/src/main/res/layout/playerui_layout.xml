@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.molitv.android.view.player.PlayerController xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/GestureControllPlayPosView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/player_bottomview_height"
+        android:orientation="horizontal" />
+
+    <include
+        android:id="@+id/PlayerInfoView"
+        layout="@layout/playerinfoview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include
+        android:id="@+id/PlayerPanelView"
+        layout="@layout/playerpanelview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include
+        android:id="@+id/PlayerExpandView"
+        layout="@layout/playerexpandview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:longClickable="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/TopLoadingView"
+            layout="@layout/centerinfoviewtop_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_52"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_52"
+            android:layout_marginTop="@dimen/dp_18"
+            android:visibility="gone" />
+    </LinearLayout>
+</com.molitv.android.view.player.PlayerController>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:arc="http://schemas.android.com/apk/res-auto">
+    <com.cloudmedia.tv.player.VideoView2 android:gravity="center" android:layout_gravity="center" android:id="@+id/videoview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="bottom" android:id="@+id/shoppingImg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="220.0dip" android:scaleType="fitXY" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_epg" />
+    <com.cloudmedia.tv.widget.ArcProgress android:layout_gravity="bottom|center|right" android:id="@id/arc_progress" android:visibility="invisible" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginRight="70.0dip" android:layout_marginBottom="40.0dip" arc:arc_progress="0" arc:arc_max="100" arc:arc_bottom_text="正在下载" arc:arc_bottom_text_size="13.0sp" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/timeshift_view" />
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.molitv.android.view.widget.TabHorizontalListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <com.molitv.android.view.widget.MRHorizontalScrollView
+        android:id="@id/HorizontalScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@id/TabContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </com.molitv.android.view.widget.MRHorizontalScrollView>
+
+    <ImageView
+        android:id="@id/LeftShadow"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_35"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tag_tabview_left_shadow"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/RightShadow"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_35"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tag_tabview_right_shadow"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/LeftArrow"
+        android:layout_width="@dimen/dp_6"
+        android:layout_height="@dimen/dp_10"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_left_default"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/RightArrow"
+        android:layout_width="@dimen/dp_6"
+        android:layout_height="@dimen/dp_10"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_right_default"
+        android:visibility="gone" />
+</com.molitv.android.view.widget.TabHorizontalListView>
